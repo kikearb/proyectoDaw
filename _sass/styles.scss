@@ -458,6 +458,8 @@ footer img {
 
 .desc .eq {
     width: 50%;
+    @include horizontal-padding(4em);
+    @include vertical-padding(2em);
     float: right;
 }
 
@@ -475,13 +477,12 @@ footer img {
 .desc .eq h1 {
     font-size: 150%;
     text-align: center;
-    padding: 2em;
 }
 
 .desc .eq p {
     text-align: justify;
     font-family: robotoli;
-    padding: 0 4em;
+    padding-top: 2em;
 }
 
 .dir2 {

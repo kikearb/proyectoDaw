@@ -403,6 +403,10 @@ footer img {
 /*SOBRE NOSOTROS*/
 .desc .eq {
   width: 50%;
+  padding-right: 4em;
+  padding-left: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   float: right; }
 
 .desc .equi {
@@ -416,13 +420,12 @@ footer img {
 
 .desc .eq h1 {
   font-size: 150%;
-  text-align: center;
-  padding: 2em; }
+  text-align: center; }
 
 .desc .eq p {
   text-align: justify;
   font-family: robotoli;
-  padding: 0 4em; }
+  padding-top: 2em; }
 
 .dir2 {
   padding-bottom: 0.5em;
