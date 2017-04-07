@@ -1,0 +1,10 @@
+title: HAUDA
+description: Si cambio la descripción en _config.yml se cambia automáticamente en las demás
+
+buzz: nothing
+
+sass:
+    sass_dir: _sass
+    
+gems:
+    - jekyll-sitemap

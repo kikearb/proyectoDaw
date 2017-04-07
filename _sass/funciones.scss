@@ -1,0 +1,33 @@
+@mixin vertical-padding($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+@mixin horizontal-padding($padding) {
+    padding-right: $padding;
+    padding-left: $padding;
+}
+
+@mixin vertical-margin($margin) {
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+
+@mixin horizontal-margin($margin) {
+    margin-right: $margin;
+    margin-left: $margin;
+}
+
+@mixin border-radius($porcentaje) {
+    -webkit-border-radius: $porcentaje;
+    -o-border-radius: $porcentaje;
+    -moz-border-radius: $porcentaje;
+    border-radius: $porcentaje;
+}
+
+@mixin box-shadow($a, $b, $c, $d, $color) {
+    -webkit-box-shadow: $a $b $c $d $color;
+    -o-box-shadow: $a $b $c $d $color;
+    -moz-box-shadow: $a $b $c $d $color;
+    box-shadow: $a $b $c $d $color;
+}
