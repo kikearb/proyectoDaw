@@ -73,6 +73,9 @@ body {
 
 header {
   clear: both; }
+  @media (max-width: 768px) {
+    header {
+      display: inline-block; } }
 
 header a {
   text-decoration: none;
@@ -188,13 +191,13 @@ header li:hover a {
     float: right;
     padding: 0; } }
 
-iframe {
+.video {
   width: 80%;
   height: 11em;
   margin-right: 10%;
   margin-left: 10%; }
   @media screen and (min-width: 768px) {
-    iframe {
+    .video {
       margin-right: 0;
       margin-left: 0;
       width: 100%;
@@ -382,156 +385,234 @@ footer img {
 .cont {
   background-color: #ffffff;
   border-bottom: solid 0.5em #EE1045;
-  height: 15em; }
+  padding-top: 4.5em;
+  padding-bottom: 4.5em; }
+  @media (max-width: 768px) {
+    .cont {
+      border-top: solid 0.5em #EE1045; } }
 
 .cont h1 {
   color: #EE1045;
-  margin-top: 1.5em;
-  font-size: 300%;
+  font-size: 200%;
   text-align: center; }
+  @media (min-width: 768px) {
+    .cont h1 {
+      font-size: 300%; } }
 
 .cont h2 {
   text-align: center;
-  color: #808080;
-  font-size: 180%; }
+  font-size: 120%;
+  color: #808080; }
+  @media (min-width: 768px) {
+    .cont h2 {
+      font-size: 180%; } }
+
+.cont a {
+  text-decoration: none;
+  color: #808080; }
 
 .map,
 .mapa {
-  height: 28em; }
+  height: 20em;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .map,
+    .mapa {
+      height: 28em; } }
 
 /*SOBRE NOSOTROS*/
-.desc .eq {
-  width: 50%;
-  padding-right: 4em;
-  padding-left: 4em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  flex: 1; }
+.nosot {
+  display: inherit; }
 
-.desc .equi {
-  width: 50%;
-  flex: 1;
-  display: flex; }
+@media (min-width: 768px) {
+  .desc .eq {
+    width: 50%;
+    float: right;
+    padding-right: 4em;
+    padding-left: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em; } }
+
+@media (min-width: 768px) {
+  .desc .equi {
+    float: left;
+    width: 50%;
+    display: flex; } }
 
 .desc .equi img {
   margin: 0 auto;
   max-height: 380px;
   padding: 1em; }
+  @media (max-width: 768px) {
+    .desc .equi img {
+      width: 100%; } }
 
 .desc .eq h1 {
   font-size: 150%;
   text-align: center; }
+  @media (max-width: 768px) {
+    .desc .eq h1 {
+      padding-top: 0.5em; } }
 
 .desc .eq p {
   text-align: justify;
   font-family: robotoli;
   padding-top: 2em; }
+  @media (max-width: 768px) {
+    .desc .eq p {
+      display: none; } }
 
 .dir2 {
   padding-bottom: 0.5em;
   clear: both;
-  height: 32em; }
+  height: 32px; }
 
-.dir2 div {
-  height: 32em;
+.boss {
   position: relative;
-  width: 50%;
-  float: left;
-  border-bottom: solid 0.5em #EE1045; }
+  float: left; }
+  @media (min-width: 768px) {
+    .boss {
+      width: 50%; } }
 
 .ans {
-  background: url("/assets/img/anan3.jpg") bottom no-repeat;
-  background-position: right;
-  background-size: contain; }
+  background: url("/assets/img/anan3.jpg") bottom right no-repeat;
+  background-size: contain;
+  height: 22em;
+  border-bottom: solid 0.5em #EE1045; }
+  @media (min-width: 768px) {
+    .ans {
+      height: 30em; } }
 
 .ans p:first-child {
   position: absolute;
-  top: 79%;
-  font-size: 150%;
-  left: 8%; }
+  font-size: 140%;
+  top: 4%;
+  left: 5%; }
+  @media (min-width: 768px) {
+    .ans p:first-child {
+      top: 55%;
+      font-size: 150%;
+      left: 8%; } }
 
 .ang p:first-child {
   position: absolute;
-  top: 79%;
-  font-size: 150%;
-  right: 8%; }
+  top: 4%;
+  font-size: 140%;
+  right: 5%; }
+  @media (min-width: 768px) {
+    .ang p:first-child {
+      top: 55%;
+      font-size: 150%;
+      right: 8%; } }
 
 .ang p:last-child {
   position: absolute;
   font-family: robotoli;
   font-weight: bold;
   color: #EE1045;
-  font-size: 120%;
-  top: 83%;
-  right: 14.5%; }
+  font-size: 110%;
+  top: 7%;
+  right: 15%; }
+  @media (min-width: 768px) {
+    .ang p:last-child {
+      font-size: 120%;
+      top: 59%;
+      right: 13.5%; } }
 
 .ans p:last-child {
   position: absolute;
   font-family: robotoli;
   font-weight: bold;
   color: #EE1045;
-  font-size: 120%;
-  top: 83%;
-  left: 12%; }
+  font-size: 110%;
+  top: 7%;
+  left: 10.5%; }
+  @media (min-width: 768px) {
+    .ans p:last-child {
+      font-size: 120%;
+      top: 59%;
+      left: 11.5%; } }
 
 .ang {
   background: url("/assets/img/ango3.jpg") no-repeat;
   background-position: left;
-  background-size: contain; }
+  background-size: contain;
+  height: 22em;
+  border-bottom: solid 0.5em #EE1045; }
+  @media (min-width: 768px) {
+    .ang {
+      height: 30em; } }
 
-.nos div {
-  width: 50%;
-  float: left;
-  padding: 2em; }
+.sans, .sang {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  padding-left: 1em; }
 
-.nos .sans p {
+.sans p {
   font-family: robotoli;
   text-align: justify; }
 
-.nos .sang p {
+.sang p {
   font-family: robotoli;
   text-align: justify; }
 
-.nos .sans p:first-child:before {
-  content: "MENUDO MARR├ôN. ";
+.sans p:first-child:before {
+  content: "MENUDO MARRÓN. ";
   font-family: robotobl; }
 
-.nos .sang p:first-child:before {
+.sang p:first-child:before {
   content: "REBAJAS. ";
   font-family: robotobl; }
 
 /* SERVICIOS */
+.services {
+  display: flex;
+  width: 100%; }
+
+.servs {
+  width: 100%; }
+  @media (max-width: 768px) {
+    .servs {
+      border-top: solid 0.5em #EE1045; } }
+
 .servs article {
   font-family: robotoli;
-  float: left;
-  width: 50%;
+  width: 95%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
   margin-top: 1.5em; }
+  @media (min-width: 768px) {
+    .servs article {
+      float: left;
+      margin-right: 0;
+      margin-left: 0;
+      width: 50%; } }
+  .servs article h3 {
+    font-family: robotoli;
+    background-color: #EE1045;
+    color: #ffffff;
+    padding: 0.25em; }
 
 .servs article:nth-of-type(even) {
   padding-right: 1.5em; }
 
 .servs article:nth-of-type(even) h3 {
   text-align: left;
-  font-family: robotoli;
-  padding: 0.25em;
-  padding-left: 2em;
-  background-color: #EE1045;
-  color: #ffffff; }
+  padding-left: 2em; }
 
 .servs article:nth-of-type(odd) {
   padding-left: 1.5em; }
 
 .servs article:nth-of-type(odd) h3 {
   text-align: right;
-  font-family: robotoli;
-  padding: 0.25em;
-  padding-right: 2em;
-  background-color: #EE1045;
-  color: #ffffff; }
+  padding-right: 2em; }
 
 .servs p {
   font-family: robotoli;
-  padding: 2.5em;
+  padding-top: 2em;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
   text-align: justify;
   height: 15em; }
   @media (min-width: 850px) {
@@ -541,19 +622,30 @@ footer img {
     .servs p {
       height: 9em; } }
 
-.servs img {
-  height: 22.5em;
-  width: 100%;
-  max-width: 650px;
-  text-align: center;
+.foto-trabajo {
+  display: flex;
   padding-right: 2.5em;
   padding-left: 2.5em; }
 
+.servs img {
+  max-height: 22.5em;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 544px; }
+  @media (max-width: 768px) {
+    .servs img {
+      height: 15em; } }
+
 .servs a {
+  display: block;
+  margin-top: 2%;
+  margin-left: 60%;
   color: #000000;
   font-family: robotoli;
-  text-decoration: none;
-  padding-left: 80%; }
+  text-decoration: none; }
+  @media (min-width: 768px) {
+    .servs a {
+      margin-left: 78%; } }
 
 .servs article:last-child {
   margin-bottom: 1.5em; }

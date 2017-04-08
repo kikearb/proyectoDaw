@@ -1,28 +1,45 @@
+﻿.nosot {
+    display: inherit;
+}
+
 .desc .eq {
-    width: 50%;
-    @include horizontal-padding(4em);
-    @include vertical-padding(2em);
-    flex: 1;
+    @media (min-width: 768px) {
+        width: 50%;
+        float: right;
+        @include horizontal-padding(4em);
+        @include vertical-padding(2em);
+    }
 }
 
 .desc .equi {
-    width: 50%;
-    flex: 1;
-    display: flex;
+    @media (min-width:768px) {
+        float: left;
+        width: 50%;
+        display: flex;
+    }
 }
 
 .desc .equi img {
+    @media (max-width: 768px) {
+        width: 100%;
+    }
     margin: 0 auto;
     max-height: 380px;
     padding: 1em;
 }
 
 .desc .eq h1 {
+    @media (max-width: 768px) {
+        padding-top: 0.5em;
+    }
     font-size: 150%;
     text-align: center;
 }
 
 .desc .eq p {
+    @media (max-width: 768px) {
+        display: none;
+    }
     text-align: justify;
     font-family: robotoli;
     padding-top: 2em;
@@ -31,35 +48,51 @@
 .dir2 {
     padding-bottom: 0.5em;
     clear: both;
-    height: 32em;
+    height: 32px;
 }
 
-.dir2 div {
-    height: 32em;
+.boss {
     position: relative;
-    width: 50%;
     float: left;
-    border-bottom: solid 0.5em $rosa;
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+    
 }
 
 .ans {
-    background: url('/assets/img/anan3.jpg') bottom no-repeat;
-    background-position: right;
+    background: url('/assets/img/anan3.jpg') bottom right no-repeat;
     background-size: contain;
+    height: 22em;
+    border-bottom: solid 0.5em $rosa;
+    @media (min-width: 768px) {
+        height: 30em;
+    }
 }
 
 .ans p:first-child {
     position: absolute;
-    top: 79%;
-    font-size: 150%;
-    left: 8%;
+    font-size: 140%;
+    top: 4%;
+    left: 5%;
+    @media (min-width: 768px) {
+        top: 55%;
+        font-size: 150%;
+        left: 8%;
+    }
+    
 }
 
 .ang p:first-child {
     position: absolute;
-    top: 79%;
-    font-size: 150%;
-    right: 8%;
+    top: 4%;
+    font-size: 140%;
+    right: 5%;
+    @media (min-width: 768px) {
+        top: 55%;
+        font-size: 150%;
+        right: 8%;
+    }
 }
 
 .ang p:last-child {
@@ -67,9 +100,14 @@
     font-family: robotoli;
     font-weight: bold;
     color: $rosa;
-    font-size: 120%;
-    top: 83%;
-    right: 14.5%;
+    font-size: 110%;
+    top: 7%;
+    right: 15%;
+    @media (min-width: 768px) {
+        font-size: 120%;
+        top: 59%;
+        right: 13.5%;
+    }
 }
 
 .ans p:last-child {
@@ -77,39 +115,48 @@
     font-family: robotoli;
     font-weight: bold;
     color: $rosa;
-    font-size: 120%;
-    top: 83%;
-    left: 12%;
+    font-size: 110%;
+    top: 7%;
+    left: 10.5%;
+    @media (min-width: 768px) {
+        font-size: 120%;
+        top: 59%;
+        left: 11.5%;
+    }
 }
 
 .ang {
     background: url('/assets/img/ango3.jpg') no-repeat;
     background-position: left;
     background-size: contain;
+    height: 22em;
+    border-bottom: solid 0.5em $rosa;
+    @media (min-width: 768px) {
+        height: 30em;
+    }
 }
 
-.nos div {
-    width: 50%;
-    float: left;
-    padding: 2em;
+.sans, .sang {
+    @include vertical-padding(1em);
+    @include horizontal-padding(1em);
 }
 
-.nos .sans p {
+.sans p {
     font-family: robotoli;
     text-align: justify;
 }
 
-.nos .sang p {
+.sang p {
     font-family: robotoli;
     text-align: justify;
 }
 
-.nos .sans p:first-child:before {
+.sans p:first-child:before {
     content: "MENUDO MARRÓN. ";
     font-family: robotobl;
 }
 
-.nos .sang p:first-child:before {
+.sang p:first-child:before {
     content: "REBAJAS. ";
     font-family: robotobl;
 }

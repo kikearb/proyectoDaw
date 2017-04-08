@@ -1,8 +1,33 @@
+.services {
+    display: flex;
+    width: 100%;
+}
+
+.servs {
+    width: 100%;
+    @media (max-width: 768px) {
+        border-top: solid 0.5em $rosa;
+    }
+}
+
 .servs article {
     font-family: robotoli;
-    float: left;
-    width: 50%;
+    width: 95%;
+    @include horizontal-margin(2.5%);
     margin-top: 1.5em;
+
+    @media (min-width: 768px) {
+        float: left;
+        @include horizontal-margin(0);
+        width: 50%;
+    }
+
+    h3 {
+        font-family: robotoli;
+        background-color: $rosa;
+        color: $blanco;
+        padding: 0.25em;
+    }
 }
 
 .servs article:nth-of-type(even) {
@@ -11,11 +36,7 @@
 
 .servs article:nth-of-type(even) h3 {
     text-align: left;
-    font-family: robotoli;
-    padding: 0.25em;
     padding-left: 2em;
-    background-color: $rosa;
-    color: $blanco;
 }
 
 .servs article:nth-of-type(odd) {
@@ -24,16 +45,13 @@
 
 .servs article:nth-of-type(odd) h3 {
     text-align: right;
-    font-family: robotoli;
-    padding: 0.25em;
     padding-right: 2em;
-    background-color: $rosa;
-    color: $blanco;
 }
 
 .servs p {
     font-family: robotoli;
-    padding: 2.5em;
+    padding-top: 2em;
+    @include horizontal-padding(2.5em);
     text-align: justify;
     height: 15em;
     @media (min-width: 850px) {
@@ -44,19 +62,32 @@
     }
 }
 
+.foto-trabajo {
+    display: flex;
+    @include horizontal-padding(2.5em)
+}
+
 .servs img {
-    height: 22.5em;
+    max-height: 22.5em;
+    margin: 0 auto;
     width: 100%;
-    max-width: 650px;
-    text-align: center;
-    @include horizontal-padding(2.5em);
+    max-width: 544px;
+    @media (max-width: 768px) {
+        height: 15em;
+    }
 }
 
 .servs a {
+    display: block;
+    margin-top: 2%;
+    margin-left: 60%;
     color: $negro;
     font-family: robotoli;
     text-decoration: none;
-    padding-left: 80%;
+
+    @media (min-width: 768px) {
+        margin-left: 78%;    
+    }
 }
 
 .servs article:last-child {

@@ -1,23 +1,41 @@
 .cont {
+    @media (max-width: 768px) {
+        border-top: solid 0.5em $rosa;
+    }
     background-color: $blanco;
     border-bottom: solid 0.5em $rosa;
-    height: 15em;
+    @include vertical-padding(4.5em);
 }
 
 .cont h1 {
     color: $rosa;
-    margin-top: 1.5em;
-    font-size: 300%;
+    font-size: 200%;
     text-align: center;
+    @media (min-width: 768px) {
+        font-size: 300%;
+    }
 }
 
 .cont h2 {
     text-align: center;
+    font-size: 120%;
     color: $gris;
-    font-size: 180%;
+    @media (min-width: 768px) {
+        font-size: 180%;
+    }
+}
+
+.cont a {
+    text-decoration: none;
+    color: $gris;
 }
 
 .map,
 .mapa {
-    height: 28em;
+    height: 20em;
+    width: 100%;
+    @media (min-width: 768px) {
+        height: 28em;
+    }
+    
 }
