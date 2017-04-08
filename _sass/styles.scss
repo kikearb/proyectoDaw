@@ -229,6 +229,9 @@ header li:hover a {
 }
 
 .desc {
+    @media (max-width: 768px) {
+        border-top: solid 0.5em $rosa;
+    }
     background-color: $negro;
     color: $blanco;
     float: left;
@@ -444,62 +447,4 @@ footer img {
 
 /* ESTILOS TRABAJOS */
 
-.prodaud h1 {
-    font-family: robotoli;
-    @include vertical-padding(1.5em);
-    @include horizontal-padding(1.2em);
-    color: $rosa;
-}
-
-.prodaud section {
-    display: inline-block;
-}
-
-.prodaud article {
-    width: 50%;
-    float: left;
-    @include horizontal-padding(2.25em);
-    margin-bottom: 1.5em;
-}
-
-.prodaud img {
-    display: inline;
-}
-
-.prodaud article:nth-of-type(even) .secun {
-    float: left;
-}
-
-.prodaud article:nth-of-type(even) .principal {
-    float: right;
-}
-
-.prodaud article:nth-of-type(odd) .secun {
-    float: right;
-}
-
-.prodaud article:nth-of-type(odd) .principal {
-    float: left;
-}
-
-.prodaud .principal {
-    width: 70%;
-    height: 20em;
-}
-
-.prodaud .secun {
-    width: 29%;
-    height: 20em;
-}
-
-.prodaud h2 {
-    clear: both;
-    font-family: robotoli;
-    margin-top: 0.5em;
-}
-
-.prodaud p {
-    font-family: robotoli;
-    font-weight: 900;
-    color: $rosa;
-}
+@import "trabajos.scss";

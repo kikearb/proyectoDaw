@@ -23,6 +23,7 @@
     }
 
     h3 {
+        text-align: center;
         font-family: robotoli;
         background-color: $rosa;
         color: $blanco;
@@ -31,26 +32,34 @@
 }
 
 .servs article:nth-of-type(even) {
-    padding-right: 1.5em;
+    @media (min-width: 768px) {
+        padding-right: 1.5em;
+    }
 }
 
 .servs article:nth-of-type(even) h3 {
-    text-align: left;
-    padding-left: 2em;
+    @media (min-width: 768px) {
+        text-align: left;
+        padding-left: 2em;
+    }
 }
 
 .servs article:nth-of-type(odd) {
-    padding-left: 1.5em;
+    @media (min-width: 768px) {
+        padding-left: 1.5em;
+    }
 }
 
 .servs article:nth-of-type(odd) h3 {
-    text-align: right;
-    padding-right: 2em;
+    @media (min-width: 768px) {
+        text-align: right;
+        padding-right: 2em;
+    }
 }
 
 .servs p {
     font-family: robotoli;
-    padding-top: 2em;
+    @include vertical-padding(2em);
     @include horizontal-padding(2.5em);
     text-align: justify;
     @media (min-width: 850px) {

@@ -208,6 +208,9 @@ header li:hover a {
   color: #ffffff;
   float: left;
   width: 100%; }
+  @media (max-width: 768px) {
+    .desc {
+      border-top: solid 0.5em #EE1045; } }
   @media screen and (min-width: 768px) {
     .desc {
       display: flex; } }
@@ -589,28 +592,34 @@ footer img {
       margin-left: 0;
       width: 50%; } }
   .servs article h3 {
+    text-align: center;
     font-family: robotoli;
     background-color: #EE1045;
     color: #ffffff;
     padding: 0.25em; }
 
-.servs article:nth-of-type(even) {
-  padding-right: 1.5em; }
+@media (min-width: 768px) {
+  .servs article:nth-of-type(even) {
+    padding-right: 1.5em; } }
 
-.servs article:nth-of-type(even) h3 {
-  text-align: left;
-  padding-left: 2em; }
+@media (min-width: 768px) {
+  .servs article:nth-of-type(even) h3 {
+    text-align: left;
+    padding-left: 2em; } }
 
-.servs article:nth-of-type(odd) {
-  padding-left: 1.5em; }
+@media (min-width: 768px) {
+  .servs article:nth-of-type(odd) {
+    padding-left: 1.5em; } }
 
-.servs article:nth-of-type(odd) h3 {
-  text-align: right;
-  padding-right: 2em; }
+@media (min-width: 768px) {
+  .servs article:nth-of-type(odd) h3 {
+    text-align: right;
+    padding-right: 2em; } }
 
 .servs p {
   font-family: robotoli;
   padding-top: 2em;
+  padding-bottom: 2em;
   padding-right: 2.5em;
   padding-left: 2.5em;
   text-align: justify; }
@@ -650,6 +659,9 @@ footer img {
   margin-bottom: 1.5em; }
 
 /* ESTILOS TRABAJOS */
+.prodaud {
+  border-top: solid 0.5em #EE1045; }
+
 .prodaud h1 {
   font-family: robotoli;
   padding-top: 1.5em;
@@ -662,14 +674,20 @@ footer img {
   display: inline-block; }
 
 .prodaud article {
-  width: 50%;
   float: left;
   padding-right: 2.25em;
   padding-left: 2.25em;
   margin-bottom: 1.5em; }
+  @media (min-width: 768px) {
+    .prodaud article {
+      width: 50%; } }
 
 .prodaud img {
-  display: inline; }
+  display: inline;
+  height: 15em; }
+  @media (min-width: 768px) {
+    .prodaud img {
+      height: 20em; } }
 
 .prodaud article:nth-of-type(even) .secun {
   float: left; }
@@ -684,12 +702,10 @@ footer img {
   float: left; }
 
 .prodaud .principal {
-  width: 70%;
-  height: 20em; }
+  width: 70%; }
 
 .prodaud .secun {
-  width: 29%;
-  height: 20em; }
+  width: 29%; }
 
 .prodaud h2 {
   clear: both;
