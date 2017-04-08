@@ -96,9 +96,9 @@ header li:hover a {
 .menu-movil {
     float: left;
     font-size: 150%;
-    width: 50%;
     text-align: right;
-    @include horizontal-padding(2em);
+    margin-left: 5em;
+    margin-right: 1em;
     @include vertical-margin(1.1em);
     @media (min-width: 768px) {
         display: none;
