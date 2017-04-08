@@ -1,0 +1,23 @@
+.cont {
+    background-color: $blanco;
+    border-bottom: solid 0.5em $rosa;
+    height: 15em;
+}
+
+.cont h1 {
+    color: $rosa;
+    margin-top: 1.5em;
+    font-size: 300%;
+    text-align: center;
+}
+
+.cont h2 {
+    text-align: center;
+    color: $gris;
+    font-size: 180%;
+}
+
+.map,
+.mapa {
+    height: 28em;
+}

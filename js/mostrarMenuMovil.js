@@ -3,12 +3,12 @@ $(document).ready(function () {
     vc2 = 0;
     $('.menu-movil').click(function () {
         if (vc2 == 0) {
-            $('.princ').show(1000);
+            $('.princ').slideDown(500);
             vc2 = 1;
         }
         else if (vc2 == 1) {
-            $('.princ').hide(1000);
-            $('.sec').hide(1000);
+            $('.princ').slideUp(500);
+            $('.sec').slideUp(500);
             vc2 = 0;
         }
     }); 

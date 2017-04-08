@@ -1,3 +1,4 @@
+/*CAMBIA LAS FOTOS DE CIRCULOS EN PRINCIPAL*/
 $(document).ready(function () {
     $('#foto1').mouseenter(function () {
         $('#foto1').attr("src","/assets/img/anancomica2.jpg");
@@ -11,4 +12,8 @@ $(document).ready(function () {
     $('#foto2').mouseleave(function () {
         $('#foto2').attr("src","/assets/img/ango25.jpg");
     });
+    /*CARGA DE IMAGENES MÁS LENTA EN AMIGOS*/
+    $("img.lazy").lazyload({
+         effect : "fadeIn"
+     });
 });

@@ -1,0 +1,114 @@
+.desc .eq {
+    width: 50%;
+    @include horizontal-padding(4em);
+    @include vertical-padding(2em);
+    float: right;
+}
+
+.desc .equi {
+    width: 50%;
+    float: left;
+}
+
+.desc .equi img {
+    max-width: 100%;
+    max-height: 364px;
+    padding: 1em;
+}
+
+.desc .eq h1 {
+    font-size: 150%;
+    text-align: center;
+}
+
+.desc .eq p {
+    text-align: justify;
+    font-family: robotoli;
+    padding-top: 2em;
+}
+
+.dir2 {
+    padding-bottom: 0.5em;
+    clear: both;
+    height: 32em;
+}
+
+.dir2 div {
+    height: 32em;
+    position: relative;
+    width: 50%;
+    float: left;
+    border-bottom: solid 0.5em $rosa;
+}
+
+.ans {
+    background: url('/assets/img/anan3.jpg') bottom no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.ans p:first-child {
+    position: absolute;
+    top: 79%;
+    font-size: 150%;
+    left: 8%;
+}
+
+.ang p:first-child {
+    position: absolute;
+    top: 79%;
+    font-size: 150%;
+    right: 8%;
+}
+
+.ang p:last-child {
+    position: absolute;
+    font-family: robotoli;
+    font-weight: bold;
+    color: $rosa;
+    font-size: 120%;
+    top: 83%;
+    right: 14.5%;
+}
+
+.ans p:last-child {
+    position: absolute;
+    font-family: robotoli;
+    font-weight: bold;
+    color: $rosa;
+    font-size: 120%;
+    top: 83%;
+    left: 12%;
+}
+
+.ang {
+    background: url('/assets/img/ango3.jpg') no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.nos div {
+    width: 50%;
+    float: left;
+    padding: 2em;
+}
+
+.nos .sans p {
+    font-family: robotoli;
+    text-align: justify;
+}
+
+.nos .sang p {
+    font-family: robotoli;
+    text-align: justify;
+}
+
+.nos .sans p:first-child:before {
+    content: "MENUDO MARRÓN. ";
+    font-family: robotobl;
+}
+
+.nos .sang p:first-child:before {
+    content: "REBAJAS. ";
+    font-family: robotobl;
+}
