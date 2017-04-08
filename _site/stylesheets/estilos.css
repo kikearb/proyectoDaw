@@ -613,8 +613,7 @@ footer img {
   padding-top: 2em;
   padding-right: 2.5em;
   padding-left: 2.5em;
-  text-align: justify;
-  height: 15em; }
+  text-align: justify; }
   @media (min-width: 850px) {
     .servs p {
       height: 11em; } }

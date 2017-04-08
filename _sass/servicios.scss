@@ -53,7 +53,6 @@
     padding-top: 2em;
     @include horizontal-padding(2.5em);
     text-align: justify;
-    height: 15em;
     @media (min-width: 850px) {
         height: 11em;
     }
