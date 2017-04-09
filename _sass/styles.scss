@@ -408,14 +408,18 @@ footer {
     position: relative;
     background-color: $rosa;
     color: $blanco;
+    height: 5em;
     clear: both;
 }
 
 footer .conta {
-    position: absolute;
-    bottom: 10%;
-    right: 1%;
+    float: right;
+    margin-right: 1%;
     text-align: right;
+    margin-top: 3%;
+    @media (min-width: 768px) {
+        margin-top: 1%;
+    }
 }
 
 .telf a,
@@ -431,6 +435,7 @@ footer p {
 }
 
 footer img {
+    float: left;
     width: 4em;
     margin-top: 0.5em;
     margin-left: 0.5em;
@@ -438,10 +443,14 @@ footer img {
 
 .acc {
     $longitud: 7%;
-    float: right;
-    width: $longitud;
-    margin-right: 50% -($longitud/2);
-    margin-top: 2%;
+    margin-top: 7%;
+    float: left;
+    margin-left: 2%;
+    @media (min-width: 768px) {
+        margin-top: 2%;
+        margin-left: 41%;
+    }
+    
 }
 
 
