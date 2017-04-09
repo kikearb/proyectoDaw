@@ -48,6 +48,10 @@ body {
     float: right;
 }
 
+.escondido {
+    visibility: hidden;
+}
+
 .Facebook {
     background: url(/assets/iconos/result.png);
     background-position: 0px 0px;
@@ -432,6 +436,14 @@ footer img {
     margin-left: 0.5em;
 }
 
+.acc {
+    $longitud: 7%;
+    float: right;
+    width: $longitud;
+    margin-right: 50% -($longitud/2);
+    margin-top: 2%;
+}
+
 
 /*CONTACTO*/
 
@@ -448,3 +460,7 @@ footer img {
 /* ESTILOS TRABAJOS */
 
 @import "trabajos.scss";
+
+/* ACCESIBILIDAD */
+
+@import "accesibilidad.scss";

@@ -1,0 +1,68 @@
+.prodaud {
+    border-top: solid 0.5em $rosa;
+}
+
+.prodaud h1 {
+    font-family: robotoli;
+    @include vertical-padding(1.5em);
+    @include horizontal-padding(1.2em);
+    color: $rosa;
+}
+
+.prodaud section {
+    display: inline-block;
+}
+
+.prodaud article {
+    
+    float: left;
+    @include horizontal-padding(2.25em);
+    margin-bottom: 1.5em;
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+.prodaud img {
+    display: inline;
+    height: 15em;
+    @media (min-width: 768px) {
+        height: 20em;
+    }
+}
+
+.prodaud article:nth-of-type(even) .secun {
+    float: left;
+}
+
+.prodaud article:nth-of-type(even) .principal {
+    float: right;
+}
+
+.prodaud article:nth-of-type(odd) .secun {
+    float: right;
+}
+
+.prodaud article:nth-of-type(odd) .principal {
+    float: left;
+}
+
+.prodaud .principal {
+    width: 70%;
+}
+
+.prodaud .secun {
+    width: 29%;
+}
+
+.prodaud h2 {
+    clear: both;
+    font-family: robotoli;
+    margin-top: 0.5em;
+}
+
+.prodaud p {
+    font-family: robotoli;
+    font-weight: 900;
+    color: $rosa;
+}

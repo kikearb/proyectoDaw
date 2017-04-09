@@ -1,0 +1,39 @@
+.accesibilidad {
+	@media (max-width: 767px) {
+		border-top: solid 0.5em $rosa;
+	}
+}
+
+.accesibilidad h1 {
+	font-family: robotoli;
+    @include vertical-padding(1.5em);
+    @include horizontal-padding(1em);
+    color: $rosa;
+}
+
+.contenido {
+	@include horizontal-padding(2em);
+	padding-bottom: 1em;
+	p, li {
+		font-family: robotoli;
+	}
+	.listaAccess {
+		@include vertical-padding(1em);
+		margin-left: 1em;
+		list-style: none;
+	}
+}
+
+.atajosTrabajos {
+	padding-top: 0.5em;
+	margin-left: 1em;
+	list-style: none;
+}
+
+.contenido h2 {
+	@include vertical-padding(0.5em);
+	&:first-of-type {
+		padding-top: 0;
+	}
+	font-family: robotoli;
+}

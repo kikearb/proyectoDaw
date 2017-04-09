@@ -37,6 +37,9 @@ body {
   margin-right: 0.5em;
   float: right; }
 
+.escondido {
+  visibility: hidden; }
+
 .Facebook {
   background: url(/assets/iconos/result.png);
   background-position: 0px 0px; }
@@ -384,6 +387,12 @@ footer img {
   margin-top: 0.5em;
   margin-left: 0.5em; }
 
+.acc {
+  float: right;
+  width: 7%;
+  margin-right: 46.5%;
+  margin-top: 2%; }
+
 /*CONTACTO*/
 .cont {
   background-color: #ffffff;
@@ -716,3 +725,40 @@ footer img {
   font-family: robotoli;
   font-weight: 900;
   color: #EE1045; }
+
+/* ACCESIBILIDAD */
+@media (max-width: 767px) {
+  .accesibilidad {
+    border-top: solid 0.5em #EE1045; } }
+
+.accesibilidad h1 {
+  font-family: robotoli;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  color: #EE1045; }
+
+.contenido {
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-bottom: 1em; }
+  .contenido p, .contenido li {
+    font-family: robotoli; }
+  .contenido .listaAccess {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 1em;
+    list-style: none; }
+
+.atajosTrabajos {
+  padding-top: 0.5em;
+  margin-left: 1em;
+  list-style: none; }
+
+.contenido h2 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: robotoli; }
+  .contenido h2:first-of-type {
+    padding-top: 0; }
