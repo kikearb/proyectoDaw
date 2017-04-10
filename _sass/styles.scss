@@ -412,12 +412,14 @@ footer {
     clear: both;
 }
 
-footer .conta {
+.conta {
     float: right;
     margin-right: 1%;
     text-align: right;
     margin-top: 3%;
+    font-size: 85%;
     @media (min-width: 768px) {
+        font-size: 100%;
         margin-top: 1%;
     }
 }
@@ -442,10 +444,10 @@ footer img {
 }
 
 .acc {
-    $longitud: 7%;
     margin-top: 7%;
     float: left;
     margin-left: 2%;
+    font-size: 85%;
     @media (min-width: 768px) {
         margin-top: 2%;
         margin-left: 41%;

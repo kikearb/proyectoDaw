@@ -367,13 +367,15 @@ footer {
   height: 5em;
   clear: both; }
 
-footer .conta {
+.conta {
   float: right;
   margin-right: 1%;
   text-align: right;
-  margin-top: 3%; }
+  margin-top: 3%;
+  font-size: 85%; }
   @media (min-width: 768px) {
-    footer .conta {
+    .conta {
+      font-size: 100%;
       margin-top: 1%; } }
 
 .telf a,
@@ -395,7 +397,8 @@ footer img {
 .acc {
   margin-top: 7%;
   float: left;
-  margin-left: 2%; }
+  margin-left: 2%;
+  font-size: 85%; }
   @media (min-width: 768px) {
     .acc {
       margin-top: 2%;
@@ -735,9 +738,11 @@ footer img {
   color: #EE1045; }
 
 /* ACCESIBILIDAD */
-@media (max-width: 767px) {
-  .accesibilidad {
-    border-top: solid 0.5em #EE1045; } }
+.accesibilidad {
+  text-align: justify; }
+  @media (max-width: 767px) {
+    .accesibilidad {
+      border-top: solid 0.5em #EE1045; } }
 
 .accesibilidad h1 {
   font-family: robotoli;
