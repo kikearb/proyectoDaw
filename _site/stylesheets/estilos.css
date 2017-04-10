@@ -14,6 +14,13 @@
 ::-webkit-scrollbar-thumb {
   background: #EE1045; }
 
+.skip {
+  position: absolute;
+  top: -10em; }
+
+.separator {
+  color: #808080; }
+
 * {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -195,6 +202,7 @@ header li:hover a {
     padding: 0; } }
 
 .video {
+  border: 0;
   width: 80%;
   height: 11em;
   margin-right: 10%;

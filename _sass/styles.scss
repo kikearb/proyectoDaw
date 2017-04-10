@@ -21,6 +21,15 @@
     background: $rosa;
 }
 
+.skip {
+    position: absolute;
+    top: -10em;
+}
+
+.separator {
+    color: $gris;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -222,6 +231,7 @@ header li:hover a {
 }
 
 .video {
+    border: 0;
     width: 80%;
     height: 11em;
     @include horizontal-margin(10%);
