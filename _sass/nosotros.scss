@@ -3,7 +3,7 @@
 }
 
 .desc .eq {
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         width: 50%;
         float: right;
         @include horizontal-padding(4em);
@@ -12,7 +12,7 @@
 }
 
 .desc .equi {
-    @media (min-width:768px) {
+    @media (min-width: 992px) {
         float: left;
         width: 50%;
         display: flex;
@@ -20,16 +20,22 @@
 }
 
 .desc .equi img {
-    @media (max-width: 767px) {
-        width: 100%;
-    }
-    margin: 0 auto;
-    max-height: 380px;
     padding: 1em;
+    max-width: 100%;
+    @media (min-width: 1024px) and (orientation: landscape) {
+        padding: 2em 1em;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    @media (min-width: 1024px) {
+        max-height: 380px;    
+    }
+    
+    
 }
 
 .desc .eq h1 {
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         padding-top: 0.5em;
     }
     font-size: 150%;
@@ -37,7 +43,7 @@
 }
 
 .desc .eq p {
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         display: none;
     }
     text-align: justify;
@@ -46,6 +52,7 @@
 }
 
 .dir2 {
+    display: inline-table;
     padding-bottom: 0.5em;
     clear: both;
     height: 32px;
@@ -75,12 +82,24 @@
     font-size: 140%;
     top: 4%;
     left: 5%;
+
     @media (min-width: 768px) {
+        top: 3%;
+        font-size: 120%;
+        left: 3%;
+    }
+
+    @media (min-width: 992px) {
         top: 55%;
         font-size: 150%;
         left: 8%;
     }
     
+    @media (min-width: 1024px) and (orientation: landscape) {
+        top: 52%;
+        font-size: 150%;
+        left: 8%;
+    }
 }
 
 .ang p:first-child {
@@ -88,8 +107,21 @@
     top: 4%;
     font-size: 140%;
     right: 5%;
+    
     @media (min-width: 768px) {
+        top: 3%;
+        font-size: 120%;
+        right: 3%;
+    }
+
+    @media (min-width: 992px) {
         top: 55%;
+        font-size: 150%;
+        right: 8%;
+    }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+        top: 52%;
         font-size: 150%;
         right: 8%;
     }
@@ -103,9 +135,22 @@
     font-size: 110%;
     top: 7%;
     right: 15%;
+
     @media (min-width: 768px) {
+        font-size: 100%;
+        top: 5%;
+        right: 8.5%;
+    }
+
+    @media (min-width: 992px) {
         font-size: 120%;
         top: 59%;
+        right: 13.5%;
+    }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+        top: 55%;
+        font-size: 120%;
         right: 13.5%;
     }
 }
@@ -118,9 +163,22 @@
     font-size: 110%;
     top: 7%;
     left: 10.5%;
+
     @media (min-width: 768px) {
+        font-size: 100%;
+        top: 5%;
+        left: 5.5%;
+    }
+
+    @media (min-width: 992px) {
         font-size: 120%;
         top: 59%;
+        left: 9.5%;
+    }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+        top: 55%;
+        font-size: 120%;
         left: 11.5%;
     }
 }

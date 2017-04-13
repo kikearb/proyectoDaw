@@ -77,21 +77,14 @@ body {
 .logomenu {
     @media (max-width: 767px) {
         display: flex;
-    }
-}
-
-.logocontainer {
-    @media (max-width: 767px) {
-        width: 50%;
+        position: relative;
     }
 }
 
 .logo {
     vertical-align: middle;
     @include horizontal-padding(1em);
-    @max-width(767px) {
-        max-width: 100%;
-    }
+    max-width: 60%;
     @media(min-width: 768px) {
         @include horizontal-margin(30%);
         @include horizontal-padding(0);
@@ -121,12 +114,13 @@ header li:hover a {
 }
 
 .menu-movil {
-    float: left;
-    font-size: 150%;
-    text-align: right;
-    margin-left: 5em;
-    margin-right: 1em;
-    @include vertical-margin(1.1em);
+    position: absolute;
+    font-size: 30px;
+    right: 25px;
+    top: 15px;
+    @media (orientation: landscape) {
+        top: 40px;
+    }
     @media (min-width: 768px) {
         display: none;
     }
@@ -215,14 +209,21 @@ header li:hover a {
 .txt {
     font-size: x-large;
     text-align: center;
+    @include vertical-padding(0.4em);
     @media (min-width: 768px) {
+        font-size: 280%;
         width: 45%;
         float: left;
         
-        @include vertical-padding(2em);
+        @include vertical-padding(3em);
         line-height: 1.2;
+    }
+    @media (min-width: 992px) {
+        @include vertical-padding(2em);
         font-size: 400%;
     }
+
+
 }
 
 .coloreado {
@@ -333,13 +334,17 @@ header li:hover a {
     text-align: center;
     margin-top: 1em;
     @include horizontal-margin(5%);
-    @media(min-width:768px) {
+    @media (min-width: 768px) {
+        font-size: 65%;
         width: 20%;
         float: left;
         text-align: center;
         margin-top: 0;
         @include horizontal-margin(0);
         overflow: hidden;
+    }
+    @media (min-width: 1200px) {
+        font-size: inherit;
     }
     
 }
@@ -433,6 +438,10 @@ footer {
     text-align: right;
     margin-top: 3%;
     font-size: 85%;
+    @media (orientation: landscape) {
+        margin-top: 2.5%;
+    }
+
     @media (min-width: 768px) {
         font-size: 100%;
         margin-top: 1%;
@@ -463,7 +472,15 @@ footer img {
     float: left;
     margin-left: 2%;
     font-size: 85%;
+    @media (orientation: landscape) {
+        margin-top: 4.5%;
+        margin-left: 22%;
+    }
     @media (min-width: 768px) {
+        margin-top: 3%;
+        margin-left: 25%;
+    }
+    @media (min-width: 992px) {
         margin-top: 2%;
         margin-left: 41%;
     }
