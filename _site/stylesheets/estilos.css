@@ -37,53 +37,61 @@ body {
   background-color: #EE1045;
   height: 2em; }
 
-.social div {
+.social a {
   width: 1.5em;
   height: 1.5em;
   margin-top: 0.25em;
   margin-right: 0.5em;
   float: right; }
 
+.red {
+  color: #EE1045;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #ffffff; }
+
 .escondido {
-  visibility: hidden; }
+  display: none; }
 
-.Facebook {
-  background: url(/assets/iconos/result.png);
-  background-position: 0px 0px; }
+@media (max-width: 767px) {
+  .logomenu {
+    display: flex; } }
 
-.Youtube {
-  background: url(/assets/iconos/result.png);
-  background-position: 0px -136px; }
-
-.Instagram {
-  background: url(/assets/iconos/result.png);
-  background-position: 0px -68px; }
+@media (max-width: 767px) {
+  .logocontainer {
+    width: 50%; } }
 
 .logo {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  vertical-align: middle;
   padding-right: 1em;
-  padding-left: 1em;
-  width: 50%;
-  float: left; }
+  padding-left: 1em; }
+@max-width (767px) {
+  .logo {
+    max-width: 100%; } }
   @media (min-width: 768px) {
     .logo {
-      width: 30%;
-      margin-right: 35%;
-      margin-left: 35%;
+      margin-right: 30%;
+      margin-left: 30%;
       padding-right: 0;
-      padding-left: 0; } }
+      padding-left: 0;
+      max-width: 40%; } }
   @media (min-width: 992px) {
     .logo {
       margin-top: 1em;
       margin-bottom: 1em;
-      width: 20%;
       margin-right: 40%;
-      margin-left: 40%; } }
+      margin-left: 40%;
+      max-width: 20%; } }
 
 header {
   clear: both; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     header {
       display: inline-block; } }
 
@@ -219,7 +227,7 @@ header li:hover a {
   color: #ffffff;
   float: left;
   width: 100%; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .desc {
       border-top: solid 0.5em #EE1045; } }
   @media screen and (min-width: 768px) {
@@ -241,11 +249,7 @@ header li:hover a {
     .dir h1 {
       font-size: 2.5em; } }
 
-.dir h1:nth-of-type(1)::after {
-  content: " · ";
-  color: #808080; }
-
-.dir h1:nth-of-type(2) {
+.coloreado {
   color: #EE1045; }
 
 .dir div {
