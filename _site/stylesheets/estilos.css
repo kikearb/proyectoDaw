@@ -64,11 +64,14 @@ body {
     display: flex;
     position: relative; } }
 
+.logomenu a {
+  flex: 0.5; }
+
 .logo {
   vertical-align: middle;
   padding-right: 1em;
   padding-left: 1em;
-  max-width: 60%; }
+  max-width: 100%; }
   @media (min-width: 768px) {
     .logo {
       margin-right: 30%;
@@ -101,10 +104,10 @@ header li:hover a {
   position: absolute;
   font-size: 30px;
   right: 25px;
-  top: 15px; }
+  top: 10px; }
   @media (orientation: landscape) {
     .menu-movil {
-      top: 40px; } }
+      top: 30px; } }
   @media (min-width: 768px) {
     .menu-movil {
       display: none; } }

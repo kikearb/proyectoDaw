@@ -81,10 +81,14 @@ body {
     }
 }
 
+.logomenu a {
+    flex: 0.5;
+}
+
 .logo {
     vertical-align: middle;
     @include horizontal-padding(1em);
-    max-width: 60%;
+    max-width: 100%;
     @media(min-width: 768px) {
         @include horizontal-margin(30%);
         @include horizontal-padding(0);
@@ -117,9 +121,9 @@ header li:hover a {
     position: absolute;
     font-size: 30px;
     right: 25px;
-    top: 15px;
+    top: 10px;
     @media (orientation: landscape) {
-        top: 40px;
+        top: 30px;
     }
     @media (min-width: 768px) {
         display: none;
