@@ -69,8 +69,7 @@ body {
 
 .logo {
   vertical-align: middle;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-left: 0.5em;
   max-width: 100%; }
   @media (min-width: 768px) {
     .logo {
@@ -593,6 +592,10 @@ footer img {
   font-size: 110%;
   top: 7%;
   right: 15%; }
+  @media (max-width: 768px) and (orientation: landscape) {
+    .ang p:last-child {
+      top: 7.5%;
+      right: 10.5%; } }
   @media (min-width: 768px) {
     .ang p:last-child {
       font-size: 100%;
@@ -617,6 +620,10 @@ footer img {
   font-size: 110%;
   top: 7%;
   left: 10.5%; }
+  @media (max-width: 768px) and (orientation: landscape) {
+    .ans p:last-child {
+      top: 7.5%;
+      left: 8.5%; } }
   @media (min-width: 768px) {
     .ans p:last-child {
       font-size: 100%;

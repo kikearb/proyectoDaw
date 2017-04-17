@@ -87,7 +87,7 @@ body {
 
 .logo {
     vertical-align: middle;
-    @include horizontal-padding(1em);
+    padding-left: 0.5em;
     max-width: 100%;
     @media(min-width: 768px) {
         @include horizontal-margin(30%);

@@ -136,6 +136,11 @@
     top: 7%;
     right: 15%;
 
+    @media (max-width: 768px) and (orientation: landscape) {
+        top: 7.5%;
+        right: 10.5%;
+    }
+
     @media (min-width: 768px) {
         font-size: 100%;
         top: 5%;
@@ -163,6 +168,11 @@
     font-size: 110%;
     top: 7%;
     left: 10.5%;
+ 
+    @media (max-width: 768px) and (orientation: landscape) {
+        top: 7.5%;
+        left: 8.5%;
+    }
 
     @media (min-width: 768px) {
         font-size: 100%;
