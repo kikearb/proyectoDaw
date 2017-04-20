@@ -1,11 +1,10 @@
 title: HAUDA
 description: HAUDA Producciones es una empresa localizada en Lekumberri, Navarra. Está enfocada a la producción audiovisual, la comunicación, el diseño gráfico y el diseño web.
 
-buzz: nothing
-
 sass:
     sass_dir: _sass
     
 gems:
-    - jekyll-sitemap
     - jekyll
+    - jekyll-sitemap
+    

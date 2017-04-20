@@ -79,6 +79,15 @@ body {
         display: flex;
         position: relative;
     }
+
+    @media (min-width:768px) {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 992px) {
+        width: 20%;
+    }
 }
 
 .logomenu a {
@@ -90,14 +99,10 @@ body {
     padding-left: 0.5em;
     max-width: 100%;
     @media(min-width: 768px) {
-        @include horizontal-margin(30%);
         @include horizontal-padding(0);
-        max-width: 40%
     }
     @media(min-width: 992px) {
         @include vertical-margin(1em);
-        @include horizontal-margin(40%);
-        max-width: 20%;
     }
 }
 
