@@ -21,6 +21,10 @@
     background: $rosa;
 }
 
+.skip:focus {
+    top: 2em;
+}
+
 .skip {
     position: absolute;
     top: -10em;

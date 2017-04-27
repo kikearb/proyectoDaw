@@ -8,6 +8,7 @@ $(document).ready(function () {
         $('.princ ul li:nth-of-type(3)').css("color", "black");
     });
     vc1 = 0;
+    //CON RATON...
     $('.princ ul li:nth-of-type(3)').click(function () {
         if (vc1 == 0) {
             $('.sec').slideDown(500);
@@ -17,6 +18,20 @@ $(document).ready(function () {
         else if (vc1 == 1) {
             $('.sec').slideUp(500);
             vc1 = 0;
+        }
+    });
+    //CON ENTER...
+    $('.princ ul li:nth-of-type(3)').keypress(function( event ) {
+        if ( event.which == 13 ) {
+            if (vc1 == 0) {
+                $('.sec').slideDown(500);
+                $('.princ ul li:nth-of-type(3) a').css("color", "#EE1045");
+                vc1 = 1;
+            }
+            else {
+                $('.sec').slideUp(500);
+                vc1 = 0;
+            }
         }
     });
 });
